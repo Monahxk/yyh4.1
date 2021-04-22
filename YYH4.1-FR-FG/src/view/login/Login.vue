@@ -6,6 +6,7 @@
  * @LastEditTime: 2019-11-12 15:09:20
  -->
 <template>
+  <div>11</div>
   <div class="wrapper" id="login">
     <el-row>
       <el-col :span="14">
