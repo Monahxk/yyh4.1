@@ -1,0 +1,159 @@
+GET http://192.168.1.103:8080/api/v1/public/echo?msg=1345asdf HTTP/1.1
+
+###
+
+@host = http://192.168.1.103:8080/api  
+@host4 = http://211.144.5.66:64040/api  
+
+@json=application/json
+
+@form=multipart/form-data
+
+### 登录3.2
+
+POST {{host}}/common/clinicuser/login?username=hxyk&password=123456 
+Content-Type: {{form}}
+
+
+
+### 挂号
+ POST {{host}}/treatment/registration?patientid=40&doctorId=5&returnVisit=0&appointItemIds=2&departmentId=1&visitTrackLineitemVO.guide=&visitTrackLineitemVO.receivableCost=0&visitTrackLineitemVO.realCost=0&visitTrackLineitemVO.chargeWay=
+ Content-Type: {{form}}
+
+### 修改挂号
+ PUT {{host}}/treatment/registration?patientid=3&doctorId=5&returnVisit=0&appointItemIds=2&departmentId=1&visitTrackLineitemVO.guide=&visitTrackLineitemVO.receivableCost=0&visitTrackLineitemVO.realCost=0&visitTrackLineitemVO.chargeWay=&id=64
+ Content-Type: {{form}}
+
+### 
+
+ GET {{host}}/treatment/patientvo  
+
+###
+GET {{host}}
+
+###
+GET {{host}}/treatment/patient/40
+
+### 电子病历 下拉
+GET {{host}}/treatment/emrbigto/40
+
+### citiao 
+GET {{host}}/systemcfg/emrentry/detail/list/2
+
+
+### 获取体检列表个人
+GET {{host}}/treatment/physicalpxaminationrecord/49
+
+###
+
+GET {{host}}/marketing/callback/list/patient/40
+
+###
+GET {{host}}/systemcfg/templateclass/list
+
+###
+GET {{host}}/treatment/workbench/manager/chargebill/page?doctor=""&status=""&patientName=""&number=""&startTime=""&endTime=""&page=1&pageSize=10
+
+###
+GET {{host}}/treatment/machiningproduct/list/2
+
+###
+
+GET {{host}}/treatment/disposalrecord/list?patientId=62
+
+###
+GET {{host}}/treatment/machiningproduct/list/2
+
+###
+GET {{host}}/treatment/machiningproduct/39
+
+
+
+### 4.0登录
+POST {{host4}}/common/employee/login?username=hxyk&password=123456 
+Content-Type: {{form}}
+
+
+###
+GET {{host4}}/common/institution/list/currentuser
+
+###
+GET {{host4}}/common/employee/logout
+
+###
+GET {{host4}}/common/institution/list/currentuser
+
+###
+
+GET {{host4}}/common/institution/list/username/hxyk
+
+
+###
+GET {{host4}}/treatment/appointmentvo?patientId=1
+
+###
+GET {{host4}}/treatment/emrbigto/76
+
+###
+GET {{host4}}/marketing/callbackto/125
+
+###
+GET {{host4}}/marketing/customervo/26
+
+###
+DELETE {{host4}}/organization/employee/11
+
+###
+GET {{host4}}/marketing/prechargeactivity/page?page=1&page=10
+
+###
+POST {{host4}/marketing/cashcouponactivitydo
+
+###
+GET http://211.144.5.66:64040/api/treatment/visittracklineitem/201
+# getPatientVisittracklineitemd
+    # {
+    #   "visitTrackLineitem": null,
+    #   "doctorName": "李医生",
+    #   "departName": "牙科门诊",
+    #   "oprateName": "李医生",
+    #   "oprateContent": "",
+    #   "startTime": "2019-06-14 16:38:30"
+    # }
+
+###
+GET http://211.144.5.66:64040/api/treatment/patient/list/search?patientName='李'
+
+
+###
+GET http://211.144.5.66:64040/api/common/institution/list/username/hxyk
+#   "data": [
+#     {
+#       "id": 11,
+#       "type": 2,
+#       "order": 11,
+#       "name": "成都武侯川华光启口腔诊所",
+#       "alias": "川华光启诊所",
+#       "identifier": "cdwh",
+#       "contacts": "",
+#       "teleno": "028-63921638",
+#       "logoPath": "",
+#       "status": 0,
+#       "addr": "成都市武候区临江西路1号川投大厦1楼101-103号",
+#       "longitude": "",
+#       "latitude": "",
+#       "regTime": "2018-09-07 00:00:00",
+#       "legalPersonName": "",
+#       "legalPersonIdentityNo": "",
+#       "licenseNo": "",
+#       "organizationalCode": "",
+#       "socialCreditCode": "",
+#       "headquartersId": 11,
+#       "chainLevel1Id": 23,
+#       "chainLevel2Id": 0,
+#       "chainLevel3Id": 0,
+#       "chainLevel4Id": 0,
+#       "admin": null,
+#       "typeStr": "连锁总部"
+#     }
+#   ],

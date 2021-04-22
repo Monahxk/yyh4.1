@@ -1,0 +1,31 @@
+// directives for Jurisdiction
+export const USER_PERMISSION = 'USER_PERMISSION'
+export const SET_USER_PERMISSION = 'SET_USER_PERMISSION'
+export const GET_USER_PERMISSION = 'GET_USER_PERMISSION'
+export const OUT_LOGIN = 'OUT_LOGIN'
+
+// event for iframe
+export const SAVE_PATIENT = 'SAVE_PATIENT'
+export const GET_PATIENT_MSG = 'GET_PATIENT_MSG'
+export const SET_PATIENT_MSG = 'SET_PATIENT_MSG'
+export const SET_PATIENT_ID = 'SET_PATIENT_ID'
+export const SET_ALL_COUNT_ONE = 'SET_ALL_COUNT_ONE'
+export const SET_ROW_ID = 'SET_ROW_ID'
+
+//  state from word
+export const GET_WORK_COUNT = 'GET_WORK_COUNT'
+export const UPDATE_DOC_DIAGNOSIS = 'UPDATE_DOC_DIAGNOSIS'
+export const UPDATE_DOC_PRICE = 'UPDATE_DOC_PRICE'
+
+//就诊记录，挂号类别第一条
+export const SET_VISIT_RECORD_FRIST = 'SET_VISIT_RECORD_FRIST'
+
+// 预约
+export const GET_APPOINTMENT_PARAMS = 'GET_APPOINTMENT_PARAMS'
+export const SET_APPOINTMENT_DATA = 'SET_APPOINTMENT_DATA'
+export const GET_APPOINTMENT_DATA = 'GET_APPOINTMENT_DATA'
+
+// 就诊  
+export const GET_VISIT_PARAMS = 'GET_VISIT_PARAMS'
+export const SET_VISIT_DATA = 'SET_VISIT_DATA'
+export const GET_VISIT_DATA = 'GET_VISIT_DATA'

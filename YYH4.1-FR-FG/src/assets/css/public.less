@@ -1,0 +1,228 @@
+/**
+ * @Author: ZJZ
+ * @Date:   2019-08-01
+ * @Filename: public.less
+ * @Last modified by:   ZJZ
+ * @Last modified time: 2019-11-05
+ */
+
+// reset
+html,body{font-size: 14px;}
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+img{display:inline-block;;width: 100%;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:14px/1.14 Microsoft YaHei,arial,\5b8b\4f53;color:#333;outline:0;}
+body{background:#fff;overflow: hidden;}
+a,a:hover{color:#333;}
+*{box-sizing: border-box;}
+
+// 去除input默认填充的背景颜色
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.el-date-table th{
+  text-align: center;
+}
+*{
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.gray_text{
+  color: #B5BED1;
+}
+.blue_text{
+  color: #3B78FD;
+}
+
+
+.temp_content {
+
+  .main_top_title{
+    font-size: 16px;
+    color: #493bfd;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    height: 62px;
+    line-height: 42px;
+    // margin-top: 10px;
+  }
+  .box_header{
+    padding:20px 0 0 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-shadow: 0 0 6px 0 #e4e9ff;
+    box-shadow: 0 0 6px 0 #e4e9ff;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+    .el-form{
+      width: 100%;
+      .el-input{
+        width: 270px;
+      }
+      .el-date-editor{
+        width: 270px;
+        .el-range-separator{
+          padding:0;
+        }
+      }
+    }
+    .search_btn{
+      padding:12px 50px;
+    }
+    .add_btn{
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: -60px;
+      width: 154px;
+      height: 48px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #4e81f2;
+      text-align: center;
+      line-height: 48px;
+      -webkit-box-shadow: 0 0 6px 0 #e4e9ff;
+      box-shadow: 0 0 6px 0 #e4e9ff;
+      background-color: #ffffff;
+      margin-right: 20px;
+    }
+  }
+  .el-table::before{
+    display: none;
+  }
+  .pagination_box {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: white;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding-right: 40px;
+    border-top:1px solid #eee;
+    box-sizing: border-box;
+
+    .el-pagination{
+      padding-right: 20px;
+    }
+    // border-top: 1px solid rgba(59, 120, 253, 0.34);
+  }
+  .pagination_box .el-pagination span {
+    color: #4d9eff;
+  }
+  .pagination_box .el-input__inner {
+    color: #4d9eff;
+    border: 1px solid #4d9eff;
+  }
+  .pagination_box .el-select .el-input .el-select__carett {
+    color: #4d9eff !important;
+  }
+  .pagination_box .number {
+    color: #4d9eff !important;
+    background: #fff !important;
+    border: 1px solid #4d9eff !important ;
+  }
+  .pagination_box .el-pagination.is-background .btn-next,
+  .el-pagination.is-background .btn-prev,
+  .el-pagination.is-background .el-pager li {
+    color: #4d9eff !important;
+  }
+  .pagination_box
+    .el-pagination.is-background
+    .el-pager
+    li:not(.disabled).active {
+    color: #fff !important;
+    background: #4d9eff !important;
+    border: none;
+  }
+  .pagination_box .btn-next,
+  .pagination_box .btn-prev {
+    border: 1px solid #4d9eff;
+    padding: 0 10px !important;
+    background: #fff !important;
+  }
+
+  .wrapper_table1{
+    box-shadow: 0 -2px 5px 0 #e4e9ff;
+    .table-empty {
+      padding: 50px 0px;
+      width: 400px;
+      margin: auto;
+    }
+  }
+}
+
+.medium_form{
+  .el-select,.el-input,.el-date-editor.el-input{
+    width: 240px;
+  }
+  .el-textarea{
+    width: 630px;
+  }
+}
+.hidden{
+  display: inline-block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+/***************滚动条*****************/
+div::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+div::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  background-color: #dddddd;
+  background-clip: padding-box;
+  min-height: 28px;
+}
+div::-webkit-scrollbar-track-piece {
+  background-color: #f8f8f8;
+}
+ul::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+ul::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  background-color: #dddddd;
+  background-clip: padding-box;
+  min-height: 28px;
+}
+ul::-webkit-scrollbar-track-piece {
+  background-color: #f8f8f8;
+}
+::-webkit-scrollbar {
+  opacity:1!important;
+}

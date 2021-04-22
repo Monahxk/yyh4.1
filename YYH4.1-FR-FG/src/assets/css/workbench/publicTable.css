@@ -1,0 +1,198 @@
+/* table组件样式 */
+.wrapper_workbench_table{
+    box-shadow: 0 0 6px 0 #e4e9ff;
+    background: #fff;
+    /* position: absolute;
+    left: 0;
+    top:0;
+    right: 0; */
+    bottom:0px;
+    /* overflow-y: scroll; */
+  }
+  .wrapper_table{
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom:71px;
+    /* overflow-y: scroll; */
+  }
+   .wrapper_tabl .line{
+    display: inline-block;
+    height: 14px;
+    border-left: 1px solid #000;
+    vertical-align:-2px;
+    margin: 0 4px 0 4px;
+  }
+  .table_bottom{
+    height: 70px;
+    width: 100%;
+    border-top: 1px solid rgba(59, 120, 253, 0.34);
+    position: absolute;
+    bottom:0px;
+    background: white;
+  }
+  .but_box{
+    float: left;
+    padding: 20px 0 0 26px;
+    position: absolute;
+    z-index: 1;
+  }
+  .pagination_box{
+    padding: 25px 17px 0 0;
+    float: right;
+    width: 100%;
+    background: white;
+  }
+  .start_but {
+    width: 74px;
+    height: 32px;
+    border: 1px solid #4d9eff;
+    /* background-image: linear-gradient(to right, #4d9eff, #3b78fd); */
+    border: none;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: #4d9eff;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #4d9eff;
+    margin-right: 4px;
+  }
+  .start_but:hover{
+    box-shadow: 0 2px 3px 0 rgba(34, 113, 199, 0.25);
+  }
+  .but_avtive{
+    background-image: linear-gradient(to right, #4d9eff, #3b78fd);
+    color: #fff;
+
+  }
+
+/* 修改ele样式 */
+
+  .pagination_box .block .el-pagination span{
+    color: #4d9eff;
+  }
+  .pagination_box .el-input__inner{
+    color: #4d9eff;
+    border:1px solid #4d9eff;
+  }
+  .pagination_box .el-select .el-input .el-select__carett {
+    color: #4d9eff !important;
+  }
+  .pagination_box .number{
+    color: #4d9eff !important;
+    background:#fff !important;
+    border:1px solid #4d9eff !important ;
+  }
+  .pagination_box .el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li{
+    color: #4d9eff !important;
+  }
+  .pagination_box .el-pagination.is-background .el-pager li:not(.disabled).active{
+    color: #fff !important;
+    background:#4d9eff !important;
+    border:none;
+  }
+  /* 退出弹出框 */
+ .wrapper_workbench_table .dialogBox .el-dialog{
+  border-radius: 4px;
+  margin:0;
+  transform:translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  margin-top:0 !important;
+}
+.wrapper_workbench_table .dialogBox .el-dialog__body{
+  font-family: PingFangSC;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+ .wrapper_workbench_table .dialogBox .el-dialog__body{
+  padding:45px 20px
+}
+.wrapper_workbench_table .dialogBox .el-dialog__footer{
+  height: 53px;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top:1px solid #ccc !important;
+}
+.wrapper_workbench_table .el-table__empty-block{
+    /* min-height:345px; */
+}
+/* 工作台设置下来时间边框 */
+.bordernone{
+  border: none;
+}
+.bordernone  .el-range-separator{
+  width: 30px;
+}
+.allTime{
+  display:block;
+}
+@media screen and (max-width: 1870px) {
+  .allTime{
+  position: absolute;
+  left:700px !important;
+  }
+  }
+  @media screen and (max-width: 1820px) {
+  .allTime{
+  position: absolute;
+  left:650px !important;
+  }
+  }
+  @media screen and (max-width: 1800px) {
+  .allTime{
+  position: absolute;
+  left:630px !important;
+  }
+  }
+  @media screen and (max-width: 1780px) {
+  .allTime{
+  position: absolute;
+  left:550px !important;
+  }
+  }
+  @media screen and (max-width: 1700px) {
+  .allTime{
+  position: absolute;
+  left:500px !important;
+  }
+  }
+  @media screen and (max-width: 1681px) {
+  .allTime{
+  position: absolute;
+  left:500px !important;
+  width: 250px !important;
+  }
+  }
+  @media screen and (max-width: 1530px) {
+  .allTime{
+  position: absolute;
+  left:480px !important;
+  width: 230px !important;
+  }
+  }
+  @media screen and (max-width: 1400px) {
+    .allTime{
+      position: absolute;
+      left:444px !important;
+      width: 192px !important;
+    }
+    .allTime .el-input__icon {
+      display: none !important;
+    }
+    .allTime  .el-range-separator{
+      width: 16px;
+    }
+    .el-range-input{
+      font-size: 10px !important;
+    }
+  }
